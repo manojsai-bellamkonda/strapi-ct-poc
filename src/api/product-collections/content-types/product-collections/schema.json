@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_collectionss",
+  "info": {
+    "singularName": "product-collections",
+    "pluralName": "product-collectionss",
+    "displayName": "Product Collections"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "imgUrl": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "caption": {
+      "type": "string",
+      "required": true
+    },
+    "tag": {
+      "type": "enumeration",
+      "enum": [
+        "Trending",
+        "New",
+        "Best Seller",
+        "Limited Edition",
+        "Popular",
+        "Featured",
+        "Must Have",
+        "Exclusive",
+        "Seasonal"
+      ],
+      "required": false
+    }
+  }
+}
